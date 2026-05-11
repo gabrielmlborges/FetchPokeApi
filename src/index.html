@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="controller.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>FetchPokeAPI</h1>
+        <form class="search">
+            <input type="text" class="search__field" placeholder="Search an Pokemon by name" />
+            <button class="search__btn">
+                <svg class="search__icon">
+                    <use href="icons.svg#icon-search"></use>
+                </svg>
+            </button>
+        </form>
+        <div class="favorites-container">
+            <button type="button" class="favorite__btn">
+                <svg class="favorite__icon">
+                    <use href="icons.svg#icon-favorite-fill"></use>
+                </svg>
+            </button>
+            <div class="favorites-dropdown hide">
+                <ul class="favorites-list">
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="conteiner">
+        <nav>
+            <h2>Regions</h2>
+            <button type="button" class="region__btn" data-pokedex="2">Kanto</button>
+            <button type="button" class="region__btn" data-pokedex="3">Johto</button>
+            <button type="button" class="region__btn" data-pokedex="4">Hoenn</button>
+        </nav>
+        <main></main>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 <strong>Gabriel Borges</strong></p>
+            <div class="footer-links">
+                <a href="https://github.com/gabrielmlborges" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/gabriel-borges-3413a0209/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+                <a href="mailto:gabriel.borges265@gmail.com">
+                    Contato
+                </a>
+            </div>
+        </div>
+    </footer>
+    <dialog class="pokemon-detail">
+    </dialog>
+</body>
+
+</html>
