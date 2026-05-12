@@ -1,7 +1,7 @@
 class ErrorView {
   _parentElement = document.querySelector("main");
 
-  render(message = "Algo deu errado. Tente novamente!") {
+  render(message = "Something went wrong! Try again") {
     const markup = `
       <div class="error">
         <div class="error__icon">⚠️</div>

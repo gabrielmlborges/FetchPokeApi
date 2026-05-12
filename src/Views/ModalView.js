@@ -16,15 +16,13 @@ class ModalView {
     this._modal.showModal();
   }
 
-  renderError(
-    message = "Não foi possível carregar os detalhes deste Pokémon.",
-  ) {
+  renderError(message = "Unable to load Pokémon details.") {
     this._clear();
     const markup = `
     <div class="modal-error">
       <div class="error-content">
         <div class="error-icon">🕵️‍♂️</div>
-        <h2>Ops! Algo deu errado</h2>
+        <h2>Ops! Something went wrong</h2>
         <p>${message}</p>
       </div>
       <button type="button" class="close__btn">
@@ -55,8 +53,8 @@ class ModalView {
             <div class="column details-box">
                 <h2 class="pokemon-name"> ${pokemon.name} </h2>
                 <p><strong>Types:</strong> ${typesString} </p>
-                <p><strong>Peso:</strong> ${pokemon.weight}kg</p>
-                <p><strong>Tamanho:</strong> ${pokemon.height}m</p>
+                <p><strong>Weight:</strong> ${pokemon.weight}kg</p>
+                <p><strong>Height:</strong> ${pokemon.height}m</p>
             </div>
             <div class="column stats-box">
                 <p><strong>HP:</strong> ${pokemon.stats.hp}</p>

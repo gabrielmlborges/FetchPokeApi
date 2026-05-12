@@ -6,7 +6,7 @@ class FavoritesView {
   render(data) {
     if (!data || data.length === 0) {
       this._parentElement.innerHTML =
-        '<p style="text-align:center; padding: 10px;">Nenhum favorito ainda.</p>';
+        '<p style="text-align:center; padding: 10px;">No favorites yet.</p>';
       return;
     }
 

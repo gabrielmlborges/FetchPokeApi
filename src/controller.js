@@ -28,7 +28,9 @@ const controlPokemonCards = async () => {
     PokemonView.render(state.pokemonRegionList);
   } catch (error) {
     console.error(error);
-    ErrorView.render("Erro ao carregar a região. Verifique sua conexão.");
+    ErrorView.render(
+      "Failed to load region. Please check your internet connection.",
+    );
   }
 };
 
@@ -53,7 +55,7 @@ const controlModalPokemon = async () => {
   } catch (error) {
     console.error(error);
     ModalView.renderError(
-      "Não conseguimos encontrar esse Pokémon. Tente buscar por outro nome!",
+      "Pokémon not found. Try searching for a different name!",
     );
   }
 };
