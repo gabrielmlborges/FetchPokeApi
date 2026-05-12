@@ -19,21 +19,15 @@ Projeto pessoal de aprendizado focado em aprender os fundamentos de desenvolvime
 Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
 
 1. Clone o repositório:
-```
-bash
-git clone [https://github.com/gabrielmlborges/FetchPokeApi](https://github.com/gabrielmlborges/FetchPokeApi)
-
+```bash
+git clone https://github.com/gabrielmlborges/FetchPokeApi && cd FetchPokeApi
 ```
 2. Instale as dependências (necessário para o Parcel):
-```
-bash
+```bash
 npm install
-
 ```
 3. Inicie o servidor de desenvolvimento:
-```
-bash
+```bash
 npm start
-
 ```
-4. Acesse em seu navegador: http://localhost:1234
+4. Acesse em seu navegador: `http://localhost:1234`
