@@ -10,20 +10,39 @@
 </head>
 
 <body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-search" viewBox="0 0 24 24">
+            <path
+                d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z">
+            </path>
+        </symbol>
+        <symbol id="icon-favorite-fill" viewBox="0 0 24 24">
+            <path
+                d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+            </path>
+        </symbol>
+        <symbol id="icon-favorite" viewBox="0 0 24 24">
+            <path
+                d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z">
+            </path>
+        </symbol>
+    </svg>
+
     <header>
         <h1>FetchPokeAPI</h1>
         <form class="search">
             <input type="text" class="search__field" placeholder="Search an Pokemon by name" />
             <button class="search__btn">
                 <svg class="search__icon">
-                    <use href="icons.svg#icon-search"></use>
+                    <use href="#icon-search"></use>
                 </svg>
             </button>
         </form>
         <div class="favorites-container">
             <button type="button" class="favorite__btn">
                 <svg class="favorite__icon">
-                    <use href="icons.svg#icon-favorite-fill"></use>
+                    <use href="#icon-favorite-fill"></use>
                 </svg>
             </button>
             <div class="favorites-dropdown hide">
