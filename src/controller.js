@@ -61,14 +61,13 @@ const controlModalPokemon = async () => {
 };
 
 const controlFavs = () => {
-  const isAlreadyFavorite = state.pokemonFavoriteList.some(
+  const index = state.pokemonFavoriteList.findIndex(
     (fav) => fav.name === state.activePokemon.name,
   );
 
-  if (!isAlreadyFavorite) {
+  if (index === -1) {
     state.pokemonFavoriteList.push(state.activePokemon);
   } else {
-    const index = state.pokemonFavoriteList.indexOf(state.activePokemon);
     state.pokemonFavoriteList.splice(index, 1);
   }
 
